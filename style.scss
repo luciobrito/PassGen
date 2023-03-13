@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+$fontePrincipal: 'Roboto Slab', serif ;
+$corFundo: #222222;
+$corFonte: #FFFFFF;
+@mixin fonte{
+    color: $corFonte;
+    font-family: $fontePrincipal;
+    text-align: center;
+    background-color: $corFundo;
+}
+@mixin espaco{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+body{
+    @include fonte;
+    padding: 1rem;
+}
+h1{
+    @include fonte;
+    font-size: 4rem;
+}
+#senha{
+    text-align: center;
+    width: 80%;
+    @include fonte;
+    @include espaco;
+}
+.check{
+    cursor: pointer;
+    @include espaco;
+}
+#range1{
+    @include espaco;
+}
